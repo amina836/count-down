@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>count down</title>
+	
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+    <form>  
+		    <h2>Countdown Timer</h2>
+			Enter Your Event Name <br>
+			<input  placeholder="Enter Your Event Name" type="text" id="event-name"><br><br>
+
+		<div id="Event-data">
+            Enter Your Event date<br>
+			<select  id="event-month" >
+				<option value="month">month</option>
+				<option value="Jan">Jan</option>
+				<option value="Feb">Feb</option> 
+				<option value="Mar">Mar</option>
+				<option value="Apr">Apr</option>
+				<option value="May">May</option>
+				<option value="Jun">Jun</option>
+				<option value="Jul">Jul</option>
+				<option value="Aug">Aug</option>
+				<option value="Seb">Seb</option>
+				<option value="Oct">Oct</option>
+				<option value="Nov">Nov</option>
+				<option value="Dec">Dec</option>
+			</select>
+			<input  placeholder="day" type="number" id="event-day" min="1"  max="31" onkeypress="isInputNumber(event)">
+			<input  placeholder="year" type="number" id="event-year" min="2021" ><br><br onkeypress="isInputNumber(event)">
+			Enter Your Event Time<br>
+			<input   type="time" name="time"id="event-time"  >
+			<br><br>
+			<button id="event-button">Git The Timer</button>
+		</div>
+	</form>
+		
+	    
+		<div id="container">
+			<h1 id="eventName"></h1>
+			<div id="all">
+			<div id="days-count"></div>
+			<strong>:</strong>
+			<div id="d-h-m-s"> DAYS</div>
+			</div>
+		  
+			<div id="all">
+			<div id="hours-count"></div>
+			<strong>:</strong>
+			<div id="d-h-m-s">HOURS</div>
+			</div>
+		
+			<div id="all">
+			<div id="minutes-count"></div>
+			<strong>:</strong>
+			<div id="d-h-m-s">MINUTES</div>
+			</div>
+			
+			<div id="all">
+			<div id="seconds-count"></div>
+			<div id="d-h-m-s"> SECONDS</div>
+			</div>
+		
+		</div>
+		
+	   	<script src="script.js"></script>
+	</body>
+</html>
